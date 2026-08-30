@@ -8,11 +8,10 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_cnlbsvd", "template_zaqh4gr", form.current, {
-        publicKey: "fEQzpWVMvZHpmSQ2T",
-      })
-     e.target.reset()
+    emailjs.sendForm("service_cnlbsvd", "template_zaqh4gr", form.current, {
+      publicKey: "fEQzpWVMvZHpmSQ2T",
+    });
+    e.target.reset();
   };
   return (
     <section className="contact section" id="contact">
@@ -41,11 +40,11 @@ const Contact = () => {
               <i className="bx bxl-telegram contact__card-icon"></i>
               <h3 className="contact__card-title">Telegram</h3>
               <span className="contact__card-data">980-451-241</span>
-              <a href="https://t.me/AlAAIdREESDEV"
-               className="contact__button"
-               target="_blank"
-               >
-                
+              <a
+                href="https://t.me/AlAAIdREESDEV"
+                className="contact__button"
+                target="_blank"
+              >
                 Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
@@ -55,7 +54,11 @@ const Contact = () => {
               <i className="bx bxl-messenger contact__card-icon"></i>
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">@alaaedres</span>
-              <a href="https://m.me/alaa.edres.99" className="contact__button" target="_blank">
+              <a
+                href="https://m.me/alaa.edres.99"
+                className="contact__button"
+                target="_blank"
+              >
                 Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
