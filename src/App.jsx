@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 
 import Header from "./component/header/Header";
@@ -19,9 +18,9 @@ const App = () => {
         <Home />
         <About />
         <Skills />
-        <Services />
+        {/* <Services /> */}
         <Qualification />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       <Footer />
